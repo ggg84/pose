@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pose</title>
+  
+  
+  
+      <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+  <div>
+  <canvas id="canvas"></canvas>
+  <video id="video" style="display:none;"></video>
+  <div id="overlay" class="overlay active">
+    <div>
+      <h2>Loading</h2>
+    </div>
+  </div>
+  </div>
+
+  <script src='https://cdn.jsdelivr.net/npm/@tensorflow/tfjs'></script>
+  <script src='https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet'></script>
+
+  <script  src="./script.js"></script>
+  <button onclick="fixPosition()">Click me</button>
+  <div id="messages"></div>
+
+</body>
+
+</html>
